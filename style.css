@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #091921;
+}
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#e91e63, #ffc107);
+  clip-path: circle(22% at 30% 20%);
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#fff, #da00ff);
+  clip-path: circle(20% at 70% 90%);
+}
+
+.container {
+  width: 40rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  z-index: 9;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.541);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.container:hover {
+  transform: perspective(300px) rotateX(1.7deg) rotateY(-1.46deg)
+    scale3d(1, 1, 1);
+}
+
+.container form {
+  /* display: flex; */
+
+  padding: 20px;
+  text-align: center;
+}
+
+.container h3 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.container form input {
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 15px;
+  margin: 7px 0;
+  background-color: #eee;
+  border-radius: 5px;
+  color: #c00202;
+}
+
+.container form input:not(input[type="submit"]) {
+  border-bottom: 1px solid #c00202;
+  border-right: 5px solid #c00202;
+}
+
+.container .form-btn,
+.btn {
+  background: #ffc107;
+  color: #292929;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.container .form-btn:hover,
+.container .btn:hover {
+  background: #292929;
+  color: #ffc107;
+}
+
+.container p {
+  margin: 10px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.container p a {
+  font-size: 1.8rem;
+  color: rgb(255, 181, 181);
+}
+
+/* .container form .error-msg {
+  margin-top: 0.5rem;
+  display: block;
+  color: #fff;
+  font-size: 10px;
+} */
+
+.container form .error-msg {
+  margin: 7px 0;
+  display: block;
+  background: #c00202;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 7px;
+}
+
+.container .content {
+  text-align: center;
+}
+
+.container .content h3 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.container .content span {
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.container .content h1 {
+  font-size: 50px;
+  color: #333;
+}
+
+.container .content h1 span {
+  color: crimson;
+}
+
+.container .content p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background: #ffc107;
+  color: #fff;
+  margin: 0 5px;
+  text-transform: capitalize;
+}
+
+.container .content .btn:hover {
+  background: #c00202;
+}
+
+/* .container div {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  width: 50rem;
+  color: #fff;
+  font-size: 20px;
+  user-select: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.5s;
+} */
+
+/* .container  .box span:hover {
+  transition: 0s;
+  background: rgba(255, 255, 255, 0.05);
+} */
+
+/* .container  .box span:active {
+  background: #14ff47;
+  color: #192f00;
+  font-size: 24px;
+  font-weight: 500;
+} */
